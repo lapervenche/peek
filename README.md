@@ -17,10 +17,10 @@ Enregistreur d'écran simple avec une interface facile à utiliser
 
 - [A propos](#A-propos)
 - [Prescriptions](#Prescriptions)
-  - [Durée de l'exécution](#Durée-de-l'exécution)
+  - [Recommandé au minimum pour exécuter Peek](#Recommandé-au-minimum-pour-exécuter-Peek)
   - [Développement](#Développement)
 - [Installation](#Installation)
-  - [Ensembles de distribution officiels](#Ensembles-de-distribution-officiels)
+  - [Ensembles de distribution officielles](#Ensembles-de-distribution-officielles)
   - [Flatpak](#flatpak)
   - [Snappy](#snappy)
   - [AppImage](#appimage)
@@ -59,7 +59,7 @@ Peek fonctionne sur X11 ou à l'intérieur d'une session GNOME Shell Wayland en 
 
 
 ## Prescriptions
-### Durée de l'exécution
+### Recommandé au minimum pour exécuter Peek
 
 - GTK+ >= 3.20
 - GLib >= 2.38
@@ -78,7 +78,7 @@ Peek fonctionne sur X11 ou à l'intérieur d'une session GNOME Shell Wayland en 
 
 
 ## Installation
-### Ensembles de distribution officiels
+### Ensembles de distribution officielles
 Peek est disponible dans les référentiels de paquets officiels pour les distributions suivantes:
 
 - [Arch Linux](https://www.archlinux.org/packages/community/x86_64/peek/)
