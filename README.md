@@ -15,7 +15,7 @@ Enregistreur d'écran simple avec une interface facile à utiliser
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 ## Contenu
 
-- [A propos](#A propos)
+- [A propos](#A-propos)
 - [Prescriptions](#requirements)
   - [Durée de l'exécution](#runtime)
   - [Développement](#development)
