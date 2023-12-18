@@ -15,7 +15,7 @@ Enregistreur d'écran simple avec une interface facile à utiliser
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 ## Contenu
 
-- [À propos](#about)
+- [A propos](#A propos)
 - [Prescriptions](#requirements)
   - [Durée de l'exécution](#runtime)
   - [Développement](#development)
@@ -50,7 +50,7 @@ Enregistreur d'écran simple avec une interface facile à utiliser
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-## À propos
+## A propos
 Peek facilite la création de courts screencasts d'une zone d'écran. Il a été construit pour le cas d'utilisation spécifique des zones d'écran d'enregistrement, par exemple pour une présentation aisée de l'UI les fonctionnalités de vos propres applications ou pour afficher un bug dans les rapports de bogue. Avec Peek, vous Placez simplement la fenêtre Peek au-dessus de la zone que vous voulez enregistrer et appuyer "Enregistrer". Peek est optimisé pour générer des GIF animés, mais vous pouvez aussi enregistrez directement sur WebM ou MP4 si vous préférez.
 
 Peek n'est pas une application de screencast à usage général avec des fonctionnalités étendues, mais plutôt se concentrer sur la tâche unique de créer de petits screencasts silencieux de une zone de l'écran pour créer des animations GIF ou WebM ou MP4 silencieux vidéos.
