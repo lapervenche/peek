@@ -1,26 +1,26 @@
-# Peek - an animated GIF recorder
+# Peek - un enregistreur animé GIF
 [![GitHub release](https://img.shields.io/github/release/phw/peek.svg)](https://github.com/phw/peek/releases)
 [![License: GPL v3+](https://img.shields.io/badge/license-GPL%20v3%2B-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![Packaging status](https://repology.org/badge/tiny-repos/peek.svg)](https://repology.org/metapackage/peek/packages)
 [![Build Status](https://travis-ci.org/phw/peek.svg?branch=master)](https://travis-ci.org/phw/peek)
 [![Translation Status](https://hosted.weblate.org/widgets/peek/-/svg-badge.svg)](https://hosted.weblate.org/engage/peek/?utm_source=widget)
 
-**IMPORTANT: The Peek project has been declared deprecated, please read [the announcement](https://github.com/phw/peek/issues/1191).**
+**IMPORTANT : Le projet Peek a été déclaré déprécié, veuillez lire [l'annonce](https://github.com/phw/peek/issues/1191).**
 
 ![Peek recording itself](https://raw.githubusercontent.com/phw/peek/master/data/screenshots/peek-recording-itself.gif)
 
-Simple screen recorder with an easy to use interface
+Enregistreur d'écran simple avec une interface facile à utiliser
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-## Contents
+## Contenu
 
-- [About](#about)
-- [Requirements](#requirements)
-  - [Runtime](#runtime)
-  - [Development](#development)
+- [À propos](#about)
+- [Prescriptions](#requirements)
+  - [Durée de l'exécution](#runtime)
+  - [Développement](#development)
 - [Installation](#installation)
-  - [Official distribution packages](#official-distribution-packages)
+  - [Ensembles de distribution officiels](#official-distribution-packages)
   - [Flatpak](#flatpak)
   - [Snappy](#snappy)
   - [AppImage](#appimage)
@@ -30,41 +30,32 @@ Simple screen recorder with an easy to use interface
   - [Fedora](#fedora)
   - [Solus](#solus)
   - [Arch Linux](#arch-linux)
-  - [Other distributions](#other-distributions)
-  - [From source](#from-source)
-- [Frequently Asked Questions](#frequently-asked-questions)
-  - [How can I capture mouse clicks and/or keystrokes?](#how-can-i-capture-mouse-clicks-andor-keystrokes)
-  - [How can I improve the quality of recorded GIF files](#how-can-i-improve-the-quality-of-recorded-gif-files)
-  - [Why are the GIF files so big?](#why-are-the-gif-files-so-big)
-  - [If GIF is so bad why use it at all?](#if-gif-is-so-bad-why-use-it-at-all)
-  - [What about WebM or MP4? Those are well supported on the web.](#what-about-webm-or-mp4-those-are-well-supported-on-the-web)
-  - [What is the cause for "Could not start GNOME Shell recorder" errors?](#what-is-the-cause-for-could-not-start-gnome-shell-recorder-errors)
-  - [Why can't I interact with the UI elements inside the recording area?](#why-cant-i-interact-with-the-ui-elements-inside-the-recording-area)
-  - [My recorded GIFs flicker, what is wrong?](#my-recorded-gifs-flicker-what-is-wrong)
-  - [On i3 the recording area is all black, how can I record anything?](#on-i3-the-recording-area-is-all-black-how-can-i-record-anything)
-  - [Why no native Wayland support?](#why-no-native-wayland-support)
-- [Contribute](#contribute)
-  - [Development](#development-1)
-  - [Translations](#translations)
+  - [Autres distributions](#other-distributions)
+  - [À partir de la source](#from-source)
+- [Foire aux questions](#frequently-asked-questions)
+  - [Comment puis-je capturer des clics de souris et/ou des frappes ?](#how-can-i-capture-mouse-clicks-andor-keystrokes)
+  - [Comment puis-je améliorer la qualité des fichiers GIF enregistrés](#how-can-i-improve-the-quality-of-recorded-gif-files)
+  - [Pourquoi les fichiers GIF sont-ils si gros ?](#why-are-the-gif-files-so-big)
+  - [Si le GIF est si mauvais, pourquoi l'utiliser?](#if-gif-is-so-bad-why-use-it-at-all)
+  - [Qu'en est-il du WebM ou du MP4 ? Ceux-ci sont bien soutenus sur le Web.](#what-about-webm-or-mp4-those-are-well-supported-on-the-web)
+  - [Quelle est la cause des erreurs "Ne pas démarrer GNOME Shell" ?](#what-is-the-cause-for-could-not-start-gnome-shell-recorder-errors)
+  - [Pourquoi ne puis-je pas interagir avec les éléments d'interface utilisateur à l'intérieur de la zone d'enregistrement ?](#why-cant-i-interact-with-the-ui-elements-inside-the-recording-area)
+  - [Mes GIF enregistrés scintillent, qu'est-ce qui ne va pas ?](#my-recorded-gifs-flicker-what-is-wrong)
+  - [Sur i3, la zone d'enregistrement est tout noir, comment puis-je enregistrer quoi que ce soit ?](#on-i3-the-recording-area-is-all-black-how-can-i-record-anything)
+  - [Pourquoi aucun soutien de Wayland natif n'est supporté ?](#why-no-native-wayland-support)
+- [Contribuer](#contribute)
+  - [Développement](#development-1)
+  - [Traductions](#translations)
 - [License](#license)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-## About
-Peek makes it easy to create short screencasts of a screen area. It was built
-for the specific use case of recording screen areas, e.g. for easily showing UI
-features of your own apps or for showing a bug in bug reports. With Peek, you
-simply place the Peek window over the area you want to record and press
-"Record". Peek is optimized for generating animated GIFs, but you can also
-directly record to WebM or MP4 if you prefer.
+## À propos
+Peek facilite la création de courts screencasts d'une zone d'écran. Il a été construit pour le cas d'utilisation spécifique des zones d'écran d'enregistrement, par exemple pour une présentation aisée de l'UI les fonctionnalités de vos propres applications ou pour afficher un bug dans les rapports de bogue. Avec Peek, vous Placez simplement la fenêtre Peek au-dessus de la zone que vous voulez enregistrer et appuyer "Enregistrer". Peek est optimisé pour générer des GIF animés, mais vous pouvez aussi enregistrez directement sur WebM ou MP4 si vous préférez.
 
-Peek is not a general purpose screencast app with extended features but
-rather focuses on the single task of creating small, silent screencasts of
-an area of the screen for creating GIF animations or silent WebM or MP4
-videos.
+Peek n'est pas une application de screencast à usage général avec des fonctionnalités étendues, mais plutôt se concentrer sur la tâche unique de créer de petits screencasts silencieux de une zone de l'écran pour créer des animations GIF ou WebM ou MP4 silencieux vidéos.
 
-Peek runs on X11 or inside a GNOME Shell Wayland session using XWayland.
-Support for more Wayland desktops might be added in the future (see FAQs below).
+Peek fonctionne sur X11 ou à l'intérieur d'une session GNOME Shell Wayland en utilisant XWayland. Un appui à plus d'ordinateurs de bureau Wayland pourrait être ajouté à l'avenir (voir FAQ ci-dessous).
 
 
 ## Requirements
