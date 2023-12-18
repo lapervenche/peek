@@ -16,11 +16,11 @@ Enregistreur d'écran simple avec une interface facile à utiliser
 ## Contenu
 
 - [A propos](#A-propos)
-- [Prescriptions](#requirements)
-  - [Durée de l'exécution](#runtime)
-  - [Développement](#development)
-- [Installation](#installation)
-  - [Ensembles de distribution officiels](#official-distribution-packages)
+- [Prescriptions](#Prescriptions)
+  - [Durée de l'exécution](#Durée-de-l'exécution)
+  - [Développement](#Développement)
+- [Installation](#Installation)
+  - [Ensembles de distribution officiels](#Ensembles-de-distribution-officiels)
   - [Flatpak](#flatpak)
   - [Snappy](#snappy)
   - [AppImage](#appimage)
@@ -58,29 +58,28 @@ Peek n'est pas une application de screencast à usage général avec des fonctio
 Peek fonctionne sur X11 ou à l'intérieur d'une session GNOME Shell Wayland en utilisant XWayland. Un appui à plus d'ordinateurs de bureau Wayland pourrait être ajouté à l'avenir (voir FAQ ci-dessous).
 
 
-## Requirements
-### Runtime
+## Prescriptions
+### Durée de l'exécution
 
 - GTK+ >= 3.20
 - GLib >= 2.38
 - [libkeybinder3](https://github.com/kupferlauncher/keybinder)
 - FFmpeg >= 3
-- GStreamer 'Good' plugins (for recording on GNOME Shell)
-- GStreamer 'Ugly' plugins (for MP4 recording on GNOME Shell)
-- [gifski](https://gif.ski/) (optional but recommended for improved GIF quality)
+- GStreamer 'Good' plugins (pour l'enregistrement sur GNOME Shell)
+- GStreamer 'Ugly' plugins (pour enregistrement MP4 sur GNOME Shell)
+- [gifski](https://gif.ski/) (facultatif mais recommandé pour une meilleure qualité des GIF)
 
-### Development
+### Développement
 
 - Vala compiler >= 0.22
 - Meson >= 0.47.0
-- Gettext (>= 0.19 for localized .desktop entry)
-- txt2man (optional for building man page)
+- Gettext (>= pour l'entrée localisée de .desktop)
+- txt2man (facultatif pour la construction d'une page de manuel)
 
 
 ## Installation
-### Official distribution packages
-Peek is available in official package repositories for the following
-distributions:
+### Ensembles de distribution officiels
+Peek est disponible dans les référentiels de paquets officiels pour les distributions suivantes:
 
 - [Arch Linux](https://www.archlinux.org/packages/community/x86_64/peek/)
 - [Debian](https://tracker.debian.org/pkg/peek)
