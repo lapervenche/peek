@@ -91,65 +91,63 @@ Peek est disponible dans les référentiels de paquets officiels pour les distri
 - [Solus](https://dev.getsol.us/source/peek/)
 
 ### Flatpak
-Peek can be installed on all distributions supporting [Flatpak](https://flatpak.org) from [Flathub](https://flathub.org/apps/details/com.uploadedlobster.peek).
-To install, either download
+Peek peut être installé sur toutes les distributions supportant [Flatpak](https://flatpak.org) de [Flathub](https://flathub.org/apps/details/com.uploadedlobster.peek).
+Pour installer, soit télécharger 
 [com.uploadedlobster.peek.flatpakref](https://flathub.org/repo/appstream/com.uploadedlobster.peek.flatpakref)
-and open it with GNOME Software or install via command line (first time flatpak
-users need to follow the [flatpak/flathub setup instructions](https://flatpak.org/setup/) first):
+et l'ouvrir avec le logiciel GNOME ou l'installer via la ligne de commande (Première fois Flatpak
+Les utilisateurs doivent suivre les [Instructions de configuration Flatpak / Flathub](https://flatpak.org/setup/) d'abord):
 
     flatpak install flathub com.uploadedlobster.peek
 
-For full functionality you should also install
+Pour une fonctionnalité complète, vous devez également installer
 [xdg-desktop-portal-gtk](https://github.com/flatpak/xdg-desktop-portal-gtk).
-It is available for most current distributions. Once installed, you can run Peek
-via its application icon in your desktop environment or from the command line:
+Il est disponible pour la plupart des distributions actuelles. Une fois installé, vous pouvez lancer un aperçu de Peek
+ via son icône d'application dans votre environnement de bureau ou à partir de la ligne de commande:
 
     flatpak run com.uploadedlobster.peek
 
-To update to the latest version run:
+Pour mettre à jour vers la dernière version exécutez:
 
     flatpak update --user com.uploadedlobster.peek
 
-To test the latest development version you can install
+Pour tester la dernière version de développement que vous pouvez installer:
 [peek-master.flatpakref](http://flatpak.uploadedlobster.com/peek-master.flatpakref)
 
 ### Snappy
-Peek no longer has officially supported Snap packages, see
-[the announcement](https://www.reddit.com/r/Ubuntu/comments/870bcn/snap_support_for_peek_screen_recorder_discontinued/).
-Please consider using the Flatpak or AppImage versions or use the Ubuntu PPA
-if you are using Ubuntu.
+Peek n'a plus de paquets SNAP officiellement pris en charge, voir
+[l'annonce](https://www.reddit.com/r/Ubuntu/comments/870bcn/snap_support_for_peek_screen_recorder_discontinued/).
+Veuillez envisager d'utiliser les versions FlatPak ou AppImage ou utiliser l'Ubuntu PPA
+Si vous utilisez Ubuntu.
 
 ### AppImage
-Peek [AppImage](https://appimage.org/) packages are available on the
-[release page](https://github.com/phw/peek/releases). To run download the
-`.AppImage` file and set it executable, then just run it. You can name the file
-however you want, e.g. you can name it just `peek` and place it in `$HOME/bin`
-for easy access. See the [AppImage wiki](https://github.com/AppImage/AppImageKit/wiki)
-for more information on how to use AppImages and integrate them with your system.
+Peek [AppImage](https://appimage.org/) (https://github.com/phw/peek/releases). Pour l'exécuter, téléchargez le fichier 
+`.appimage` et rendez-le exécutable, puis exécutez-le. Vous pouvez nommer le fichier comme vous le souhaitez, par exemple. vous pouvez le nommer juste `peek` et placez-le `$HOME/bin`
+pour un accès facile. Voir le [appimage wiki](https://github.com/appimage/appimagekit/wiki)
+pour plus d'informations sur la façon d'utiliser les appimages et les intégrer à votre système.
 
 ### Ubuntu
-You can install the latest versions of Peek from the
+Vous pouvez installer les dernières versions de Peek depuis:
 [Ubuntu PPA](https://code.launchpad.net/~peek-developers/+archive/ubuntu/stable).
 
     sudo add-apt-repository ppa:peek-developers/stable
     sudo apt update
     sudo apt install peek
 
-If you want to use the latest development version there is also a
+Si vous souhaitez utiliser la dernière version de développement, il existe également un
 [PPA with daily builds](https://code.launchpad.net/~peek-developers/+archive/ubuntu/daily)
-available. Use the repository `ppa:peek-developers/daily` in the above commands.
+disponible. Utilisez le référentiel  `ppa:peek-developers/daily` dans les commandes ci-dessus.
 
 ### ElementaryOS
-Adding PPA repositories requires the package `software-properties-common`
+L'ajout de référentiels PPA nécessite le package `software-properties-common`
 
     sudo apt install software-properties-common
     sudo add-apt-repository ppa:peek-developers/stable
     sudo apt update
     sudo apt install peek
 
-If you want to use the latest development version there is also a
-[PPA with daily builds](https://code.launchpad.net/~peek-developers/+archive/ubuntu/daily)
-available. Use the repository `ppa:peek-developers/daily` in the above commands.
+Si vous souhaitez utiliser la dernière version de développement, il existe également un
+[PPA avec construction quotidienne des versions](https://code.launchpad.net/~peek-developers/+archive/ubuntu/daily)
+disponible. Utilisez le référentiel `ppa:peek-developers/daily` dans les commandes ci-dessus.
 
 ### Debian
 There are official Debian packages for Debian 11 ("Bullseye") and Debian 10 ("Buster") via
